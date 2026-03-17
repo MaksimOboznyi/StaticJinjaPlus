@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Your Website{% endblock %}</title>
+    <title>Home</title>
     <link rel="stylesheet" href="assets/style.css">
+    <script src="../app.js"></script>
 </head>
 <body>
     <nav>
@@ -15,10 +16,20 @@
         </ul>
     </nav>
     <div class="container">
-        {% block content %}{% endblock %}
+        
+    <h1>Welcome to our website!</h1>
+    <p>This is the homepage content. Replace it with your own.</p>
+        
+          <div class="card-container">
+    <div class="card">
+        <p>Вывод текста из файла _card.html методом include. Страница Домашняя Номер 1 </p>
+    </div>
+</div>
+        
+
     </div>
     <footer>
-        <p>&copy; 2024 Your Website. All rights reserved.</p>
+        <p>&copy; 2024 DOCKERHOF. All rights reserved.</p>
     </footer>
 </body>
 </html>
